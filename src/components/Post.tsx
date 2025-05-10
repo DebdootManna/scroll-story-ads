@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Post as PostType } from '../data/models';
 import { Heart, MessageSquare, Share, Bookmark } from 'lucide-react';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import '../styles/instagram.css';
 
 interface PostProps {
   post: PostType;

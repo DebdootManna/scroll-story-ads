@@ -1,12 +1,11 @@
 
 import React from 'react';
-import Header from '../components/Header';
 import Feed from '../components/Feed';
+import '../styles/instagram.css';
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <div className="min-h-screen bg-gray-100 py-8">
       <Feed />
     </div>
   );
