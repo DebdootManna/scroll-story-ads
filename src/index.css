@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 258 68% 75%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 260 22% 54%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -61,10 +55,10 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 258 68% 75%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 260 22% 54%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -96,6 +90,59 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground font-sans;
+    overflow-x: hidden;
+  }
+
+  .instagram-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .parallax-ad {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .post-card {
+    @apply border border-instagram-lightGray rounded-md mb-6 bg-white overflow-hidden;
+  }
+
+  .post-header {
+    @apply flex items-center p-3;
+  }
+
+  .post-username {
+    @apply font-semibold text-instagram-text text-sm;
+  }
+
+  .post-avatar {
+    @apply w-8 h-8 rounded-full mr-2 object-cover;
+  }
+
+  .post-actions {
+    @apply flex items-center p-3 space-x-3;
+  }
+
+  .post-likes {
+    @apply font-semibold text-instagram-text text-sm mt-1;
+  }
+
+  .post-caption {
+    @apply text-sm px-3 pb-2;
+  }
+
+  .post-timestamp {
+    @apply text-xs text-instagram-mediumGray px-3 pb-3;
+  }
+
+  .post-comments {
+    @apply text-sm text-instagram-mediumGray px-3 pb-2;
   }
 }
