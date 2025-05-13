@@ -33,7 +33,7 @@ An interactive and visually engaging Instagram-style feed demo with dynamically 
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/DebdootManna/scroll-story-ads
 cd instagram-feed-demo
 ```
 
